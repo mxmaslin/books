@@ -1,13 +1,10 @@
 function every(arr, f) {
-	if (arr.length === 0) return false;
-	let satisfy = true;
 	for(let el of arr) {
 		if (!f(el)) {
-			satisfy = false;
-			break;
+            return false;
 		}
 	}
-	return satisfy;
+	return true;
 }
 
 function everyRecursive(arr, f) {
