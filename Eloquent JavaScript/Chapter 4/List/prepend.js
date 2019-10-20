@@ -16,11 +16,9 @@ list = {
 }
 /*
 def prepend(e, lst):
-    str_e = str(e);
-    lst = {str_e: e, 'rest': lst}
-    return lst
+    return {e, 'rest': lst}
 */
 
 function prepend(e, list) {
-    
+    return {value, rest: list};
 }
