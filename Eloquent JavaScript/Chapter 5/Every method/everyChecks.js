@@ -18,7 +18,7 @@ assert.deepEqual(result, false);
 
 var empty = [];
 var result = lib.every(empty, val => lib.predicate(val));
-assert.deepEqual(result, false);
+assert.deepEqual(result, true);
 
 
 var every = [1, 2, 3, 4];
