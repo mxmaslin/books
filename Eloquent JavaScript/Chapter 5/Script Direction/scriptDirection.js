@@ -1,5 +1,3 @@
-var fs = require('fs');
- 
 var SCRIPTS = require('./scripts.js');
  
 
@@ -40,5 +38,6 @@ function countDirection(text) {
     }).join(", ");
 }
 
-console.log(countDirection('"woof", "тяв"'))
-// → 61% Han, 22% Latin, 17% Cyrillic
+module.exports = {
+    countDirection: countDirection
+};
